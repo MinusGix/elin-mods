@@ -1,0 +1,45 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <AssemblyName>InvincibleCompanion</AssemblyName>
+    <Description>A mod that makes your companion invincible.</Description>
+    <Version>1.0.0</Version>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="UnityEngine.Modules" Version="2021.3.33" IncludeAssets="compile" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>$(HOME)/Kairos/SteamLibrary/steamapps/common/Elin/Elin_Data/Managed/Assembly-CSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Elin">
+      <HintPath>$(HOME)/Kairos/SteamLibrary/steamapps/common/Elin/Elin_Data/Managed/Elin.dll</HintPath>
+    </Reference>
+    <!-- <Reference Include="BepInEx">
+      <HintPath>$(HOME)/Kairos/SteamLibrary/steamapps/common/Elin/BepInEx/core/BepInEx.dll</HintPath>
+    </Reference> -->
+    <Reference Include="BepInEx.Core">
+      <HintPath>$(HOME)/Kairos/SteamLibrary/steamapps/common/Elin/BepInEx/core/BepInEx.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="BepInEx.Unity">
+      <HintPath>$(HOME)/Kairos/SteamLibrary/steamapps/common/Elin/BepInEx/core/BepInEx.Unity.dll</HintPath>
+    </Reference>
+    <Reference Include="0Harmony">
+      <HintPath>$(HOME)/Kairos/SteamLibrary/steamapps/common/Elin/BepInEx/core/0Harmony.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>$(HOME)/Kairos/SteamLibrary/steamapps/common/Elin/Elin_Data/Managed/UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>$(HOME)/Kairos/SteamLibrary/steamapps/common/Elin/Elin_Data/Managed/Unity.TextMeshPro.dll</HintPath>
+    </Reference>
+    <Reference Include="Plugins.UI">
+      <HintPath>$(HOME)/Kairos/SteamLibrary/steamapps/common/Elin/Elin_Data/Managed/Plugins.UI.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>
